@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="padding_1">1dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_90">90dp</dimen>
+
+    <dimen name="txt_size_16">16sp</dimen>
+
+</resources>

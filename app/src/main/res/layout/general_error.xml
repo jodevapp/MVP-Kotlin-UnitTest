@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytError"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_16"
+        android:gravity="center"
+        android:padding="@dimen/padding_8"
+        android:text="@string/general_error"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTitle"
+        android:textSize="@dimen/txt_size_16"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/retry"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+</LinearLayout>

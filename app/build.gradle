@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "jodevapp.mvpkotlin"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation "com.android.support.test:runner:$unit_test"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espresso"
+    androidTestImplementation "com.android.support.test:rules:$unit_test"
+    androidTestImplementation "org.mockito:mockito-core:$mockito"
+    androidTestImplementation "org.mockito:mockito-android:$mockito"
+
+    // View
+    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support.constraint:constraint-layout:$constraint_layout"
+
+    // Networking
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2"
+    implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit2"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxkotlin"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxkotlin"
+    implementation "com.squareup.okhttp3:mockwebserver:$logging_interceptor"
+
+    // GSON
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2"
+}
