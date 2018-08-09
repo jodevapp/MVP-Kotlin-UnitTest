@@ -10,10 +10,11 @@ import android.support.test.filters.MediumTest
 import android.support.test.rule.ActivityTestRule
 import android.support.test.runner.AndroidJUnit4
 import io.reactivex.observers.TestObserver
+import jodevapp.mvpkotlin.MainActivity
 import jodevapp.mvpkotlin.R
-import jodevapp.mvpkotlin.main.manager.ApiManager
-import jodevapp.mvpkotlin.main.model.Post
-import jodevapp.mvpkotlin.main.ui.PostView
+import jodevapp.mvpkotlin.manager.ApiManager
+import jodevapp.mvpkotlin.model.Post
+import jodevapp.mvpkotlin.ui.PostView
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.After

@@ -1,4 +1,4 @@
-package jodevapp.mvpkotlin.main.manager
+package jodevapp.mvpkotlin.manager
 
 import jodevapp.mvpkotlin.BuildConfig.DEBUG
 

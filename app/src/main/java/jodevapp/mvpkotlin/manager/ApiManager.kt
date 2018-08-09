@@ -1,15 +1,15 @@
 @file:Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 
-package jodevapp.mvpkotlin.main.manager
+package jodevapp.mvpkotlin.manager
 
 import com.google.gson.GsonBuilder
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import jodevapp.mvpkotlin.BuildConfig
-import jodevapp.mvpkotlin.main.manager.ApiSettings.devHost
-import jodevapp.mvpkotlin.main.manager.ApiSettings.liveHost
-import jodevapp.mvpkotlin.main.model.Post
+import jodevapp.mvpkotlin.manager.ApiSettings.devHost
+import jodevapp.mvpkotlin.manager.ApiSettings.liveHost
+import jodevapp.mvpkotlin.model.Post
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

@@ -1,8 +1,8 @@
-package jodevapp.mvpkotlin.main.ui
+package jodevapp.mvpkotlin.ui
 
-import jodevapp.mvpkotlin.main.base.BaseMVPPresenter
+import jodevapp.mvpkotlin.base.BaseMVPPresenter
 import jodevapp.mvpkotlin.main.base.BaseMVPView
-import jodevapp.mvpkotlin.main.model.Post
+import jodevapp.mvpkotlin.model.Post
 
 /**
  * Created by Jodevapp on 7/30/2018.
@@ -21,13 +21,13 @@ interface PostView {
         fun hideProgress()
     }
 
-    interface Presenter : BaseMVPPresenter<View> {
+    abstract class Presenter : BaseMVPPresenter<View>() {
 
         /**
          * Request Weather
          *
          * @param query the String
          */
-        fun onRequestPost()
+        abstract fun onRequestPost()
     }
 }

@@ -1,13 +1,12 @@
-package jodevapp.mvpkotlin.main
+package jodevapp.mvpkotlin
 
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
-import jodevapp.mvpkotlin.R
-import jodevapp.mvpkotlin.main.base.BaseMPVActivity
-import jodevapp.mvpkotlin.main.model.Post
-import jodevapp.mvpkotlin.main.presenter.PostPresenter
-import jodevapp.mvpkotlin.main.ui.PostView
+import jodevapp.mvpkotlin.base.BaseMPVActivity
+import jodevapp.mvpkotlin.model.Post
+import jodevapp.mvpkotlin.presenter.PostPresenter
+import jodevapp.mvpkotlin.ui.PostView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.general_error.*
 

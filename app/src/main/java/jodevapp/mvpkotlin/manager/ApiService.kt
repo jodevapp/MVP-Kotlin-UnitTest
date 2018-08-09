@@ -1,7 +1,7 @@
-package jodevapp.mvpkotlin.main.manager
+package jodevapp.mvpkotlin.manager
 
 import io.reactivex.Observable
-import jodevapp.mvpkotlin.main.model.Post
+import jodevapp.mvpkotlin.model.Post
 import retrofit2.http.GET
 import retrofit2.http.Url
 

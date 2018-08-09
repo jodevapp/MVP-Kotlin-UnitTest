@@ -9,6 +9,7 @@ import android.support.test.runner.AndroidJUnit4
 import android.test.suitebuilder.annotation.LargeTest
 import android.view.View
 import android.view.ViewGroup
+import jodevapp.mvpkotlin.MainActivity
 import jodevapp.mvpkotlin.R
 import org.hamcrest.Description
 import org.hamcrest.Matcher

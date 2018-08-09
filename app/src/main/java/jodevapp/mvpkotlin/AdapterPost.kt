@@ -1,4 +1,4 @@
-package jodevapp.mvpkotlin.main
+package jodevapp.mvpkotlin
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,8 +7,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import jodevapp.mvpkotlin.R
-import jodevapp.mvpkotlin.main.model.Post
+import jodevapp.mvpkotlin.model.Post
 import kotlinx.android.synthetic.main.adapter_post.view.*
 
 /**

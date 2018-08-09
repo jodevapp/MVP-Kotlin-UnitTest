@@ -1,7 +1,15 @@
-package jodevapp.mvpkotlin.main.base
+package jodevapp.mvpkotlin.base
 
-interface BaseMVPPresenter<in T : BaseMVPView> {
-    fun onAttach(view: T)
+import jodevapp.mvpkotlin.main.base.BaseMVPView
 
-    fun onDetach()
+abstract class BaseMVPPresenter<V : BaseMVPView> {
+    protected var mView: V? = null
+
+    fun onAttach(view: V) {
+        this.mView = view
+    }
+
+    fun onDetach() {
+        mView = null
+    }
 }

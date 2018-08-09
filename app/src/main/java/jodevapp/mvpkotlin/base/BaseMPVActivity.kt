@@ -1,10 +1,11 @@
-package jodevapp.mvpkotlin.main.base
+package jodevapp.mvpkotlin.base
 
 import android.content.Context
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import jodevapp.mvpkotlin.main.base.BaseMVPView
 
-abstract class BaseMPVActivity<in V : BaseMVPView, T : BaseMVPPresenter<V>>
+abstract class BaseMPVActivity<V : BaseMVPView, T : BaseMVPPresenter<V>>
     : AppCompatActivity(), BaseMVPView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
